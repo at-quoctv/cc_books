@@ -1,8 +1,11 @@
 class UsersController < ApplicationController
+    before_action :find_user, except: [:index, :new, :create]
   def new
     @user = User.new
   end
-
+  def index
+    @user = User.params [:id]
+  end
   def create
     @user = User.new user_params
     if @user.save
@@ -19,15 +22,5 @@ class UsersController < ApplicationController
       :password_confirmation
   end
 
-  def find_user
-    @user = User.find_by id: params[:id]
-    if @user.blank?
-      flash[:danger] = t "flash.find_user_fail"
-      redirect_to root_url
-    end
-  end
-
-  def valid_user
-    redirect_to root_url unless @user.current_user? current_user
-  end
+  
 end
