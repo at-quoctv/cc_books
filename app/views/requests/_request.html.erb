@@ -1,0 +1,15 @@
+<% @requests.each do |request| %>
+    <tr>
+      <td> <%= request.id %> </td>
+      <td> <%= request.book_name %> </td>
+      <td> <%= request.author %> </td>
+      <td> <%= request.description %> </td>
+      <th><%= request.status %></th>
+      <td>
+        <%= link_to t("views.requests.index.cancel_button"), request_path(request),
+          method: :delete, data: {confirm: t("views.requests.index.delete_confirm")},
+          class:"btn btn-danger" %>
+      </td>
+    </tr>
+  <% end %>
+  

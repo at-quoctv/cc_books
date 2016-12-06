@@ -21,3 +21,237 @@
 
 en:
   hello: "Hello world"
+<<<<<<< HEAD
+=======
+  title: "Book store"
+  header:
+    logo: "Book store"
+    admin: "admin"
+    home: "Home"
+    signup: "Sign up"
+    login : "Login"
+  footer:
+    develop: "Dev: Thuy Viet Quoc - Tran Thanh Tam-Le Quang Canh"
+    phone_contact: "Phone: 090919911s91"
+    address_contact: "Book Store VN"
+  home:
+    book: "Book Review System"
+  flash:
+    login_success: "Welcome to the Book-Review!"
+    find_user_fail: "User not found!"
+    errors: "The form contains"
+    error: "error"
+    login_errors: "Invalid email/password combination"
+    update_success: "Profile updated"
+    logged_in: "Please Login"
+  users:
+    create_user: "Create my account"
+    edit:
+      title: "Edit my profile"
+      h2: "Update your profile"
+      save: "Save change"
+      change: "Change"
+    new:
+      signup: "Signup"
+      form:
+        confir: "Confirmation"
+        submit: "Create my account"
+  share:
+    error_form: "The form contains "
+  app_controller:
+    flash_danger: "Please log in."
+  sessions:
+    label_signup: "Sign up now!"
+    login: "Log in"
+    remember: "Remember me on this computer"
+    new_user: "New user?"    
+  layout:
+    header:
+      logo: "Book Review"
+      help: "Help"
+      about: "About"
+      link_categories: "Book Library"
+      account: "Account"
+      logout: "Log out"
+      profile: "Profile"
+      user: "Users"
+      books: "Books and Categories"
+      setting: "Setting"
+      login: "Log in"
+      categories: "Categories"
+      requests: "Requests"
+    footer:
+      develop: "Develop: Ha Van Duc - Nguyen Quoc Thong"
+      phone_contact: "Phone: 0986338546"
+      address_contact: "Framgia VN"
+  book:
+    title: "book"
+
+  views:
+    admin:
+      user:
+        index:
+          dashboard: "Manage User"
+          deletebutton: "Delete"
+          deleteconfirm: "Are you sure?"
+          title: "Manage User"
+          id: "User ID"
+          name: "Name user"
+          email: "Email user"
+
+      category:
+         index:
+           dashboard: "Manage Category"
+           title: "Name_Category"
+           new_button: "New Category"
+           edit_button: "Edit"
+           delete_button: "Delete"
+           admin_function: ""
+           delete_confirm: "Are your sure?"
+           id: "Id_Category"
+           titles: "Manage Categoriy"
+         new:
+           create_category: "Create New Category"
+           create_button: "Add new category"
+           category: "Category"
+           title: "Create Category"
+         edit:
+           update_book: "Update Category"
+           update_button: "Save change"
+           title: "Edit Category"
+      requests:
+        index:
+          title: "Manage Requests"
+          delete_button: "Delete"
+          action: "Accep Requests"
+          delete_confirm: "Are you sure ?"
+        index:
+          dashboard: "Manage Category"
+          title: "Name_Category"
+          new_button: "New Category"
+          edit_button: "Edit"
+          delete_button: "Delete"
+          admin_function: ""
+          delete_confirm: "Are your sure?"
+          id: "Id_Category"
+          titles: "Manage Categoriy"
+        new:
+          create_category: "Create New Category"
+          create_button: "Add new category"
+          category: "Category"
+          title: "Create Category"
+        edit:
+          update_book: "Update Category"
+          update_button: "Save change"
+          title: "Edit Category"
+    requests:
+      index:
+        dashboard: "Request Book"
+        id: "Request ID"
+        book_title: "Book Name"
+        book_author: "Author"
+        content: "Content"
+        cancel_button: "Cancel"
+        delete_confirm: "Are you sure?"
+        new_button: "New request"
+        status: "Status"
+        action: "Action"
+      new:
+        title: "New Requests"
+        create_requests: "Create new request"
+        create_button: "Create request"
+      edit:
+        submit: "Accep"
+        find_book_fail: "Don't find book"
+    shared:
+      stats:
+        follow: "Follow"
+        unfollow: "Unfollow"
+        viewprofile: "view my profile"
+        title:
+          following: "Following"
+          followers: "Followers"
+    users:
+      submit_follow: "Follow"
+      submit_unfollow: "Unfollow"
+  review:
+    controller:
+      find_fail: "Don't find book"
+      submit: "Review"
+      flash_success: "Create review success"
+      flash_fail: "Create review fail"
+      user: "User"
+      review: "Review"
+      update_success: "Update review success"
+      update_fail: "Update review fail"
+      destroy_success: "Delete success"
+      destroy_fail: "Delete fail"
+      create_review: "Create Review"
+      edit_review: "Edit review"
+      edit: "Edit"
+      delete: "delete"
+      like: "Like"
+      unlike: "Unlike"
+      numberlike: "Number like"
+      data_confirm: "You sure delete this review?"
+      rate: "Rate: "
+      content_review: "Content Review"
+      continue: "continue..."
+      show_title: "Show review"
+      find_review_fail: "Don't find Review"
+      alt_logo: "logo"
+      back: "Back"
+    comment:
+      title: "Comment review"
+      comment: "Comment"
+      find_review_fail: "Don't find review"
+      say: " said: "
+      data_confirm: "You sure delete this comment?"
+      edit_success: "Edit comment sucess"
+      delete_sucess: "Delete comment success"
+      delete_fail: "Delete comment fail"
+      find_comment: "Don't find comment"
+      rep: "Reply"
+      edit_comment: "Edit comment"
+  search:
+    place_search: "Search with title, author, number page or rate book"
+    search: "Search"
+  activity:
+    review_timeline: "just review in book"
+    follow_timeline: "just follow"
+    read_timeline: "just mark"
+    favorite_timeline: "just mark favorite"
+    comment_timeline: "just comment a"
+    review_title: "Review"
+    in: "in"
+    ago: "ago"
+    follow: "follow"
+    review: "review"
+    comment: "comment"
+    read: "read"
+    favorite: "favorite"
+    title: "Activities Feed"
+    top_book_rate: "Top 10 best rate book"
+    rate: "Average rate"
+    author: "Author"
+    activities: "All Activities"
+  like_activity:
+    like: "Like"
+    unlike: "Unlike"
+  user_book:
+    marked: "Book is "
+    create:
+      success: "You marked this book success"
+      update: "Update mark success."
+      not_success: "You not mark"
+    change: "Change"
+    mark:
+      reading: "Reading"
+      read: "Read"
+      unread: "Unread"
+    oneline: " A user is liked only once"
+  dashboard:
+    toprequest: "Top 10 newest request"
+    topuser: "Top 10 newest register user"
+    requestempty: "Request empty"
+>>>>>>> signup

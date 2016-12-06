@@ -1,0 +1,16 @@
+<%# @books.each_slice Settings.number_each do |book| %>
+  
+  <div class="row">
+   <<div class=".col-xs-12 .col-sm-6 .col-md-8" >
+    <% @books.each do |book| %>
+      <div class="col-md-3 index-grid-image">
+        <div class="row text-center">
+          <%= link_to book.title, book %>
+           <%= link_to image_tag("books/book2.png", alt: "blog1"),
+        '#',target:"abc" %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+  </div>
+<%# end %>

@@ -1,0 +1,19 @@
+s<%= provide :title, t("book.title") %>
+<div class="container">
+    <div class="col-md-8">
+      <h2><%= @book.title %></h2>
+      <label><%= t "book.show.author" %></label>
+      <p><%= @book.author %></p>
+    
+      <%= t "admin.book.number_page" %>
+        <%= @book.number_of_pages %>
+    </div>
+</div>
+
+  <div class="row div-button-create-review">
+    <div class="cold-md-3 col-md-offset-5">
+      <%= link_to t("review.controller.create_review"),
+        new_book_review_path(@book),
+        class: "btn btn-lg btn-success" %>
+    </div>
+  </div>
